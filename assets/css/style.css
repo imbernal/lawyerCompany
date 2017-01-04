@@ -7323,3 +7323,21 @@ textarea {
 .site_logo{
 	width: 100px !important;
 }
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    width: 0%;
+    padding: 10px 29px !important;
+    background-color: #f96d55;
+}
+
+.back-to-top:hover{
+  background-color: #f96d55;
+}
+
+.back-to-top span{
+  right: 8px;
+}
