@@ -6,7 +6,7 @@ Copyright (c) 2014 Webvillee.
 Project:	Lawyer
 Version:	1.0.0
 Assigned to:	Themeforest
-Primary use:	Lawyers, Attorneys, Advocates, Barristers, Legal Advisers 
+Primary use:	Lawyers, Attorneys, Advocates, Barristers, Legal Advisers
 -------------------------------------------------------------------*/
 
 /*
@@ -20,7 +20,7 @@ Primary use:	Lawyers, Attorneys, Advocates, Barristers, Legal Advisers
 6. Practice Area / .practice_area_slider
 7. Who We Are / .who-we-are
 8. Statics / .Statics
-9. Latest News/ .latest-news-main 
+9. Latest News/ .latest-news-main
 10. Our Attorneys Silder Home / .wv-slidehover-main
 11. Blog Home / .home-blog
 12. About / .about-organization
@@ -40,7 +40,7 @@ Primary use:	Lawyers, Attorneys, Advocates, Barristers, Legal Advisers
 26. Sidebar Widget / .widget
 27. Client Login / .client-login
 28. Contact Page / .contact-area
-29. Upper Footer / .upper-footer 
+29. Upper Footer / .upper-footer
 30. Footer / footer
 31. Social Icon / .social
 -------------------------------------------------------------------*/
@@ -72,7 +72,7 @@ Hover :		#f55e45 (bright red)
 @import url("assets/plugin/revslider/css/settings.css");
 
 /*Defaults CSS SETTINGS */
-@import url("assets/css/hover-dropdown-menu.css");		
+@import url("assets/css/hover-dropdown-menu.css");
 @import url("assets/css/style.css");
 @import url("assets/css/responsive.css");
 @import url("assets/css/color.css");
@@ -80,8 +80,6 @@ Hover :		#f55e45 (bright red)
 
 
 /*Important Owl stylesheet*/
-@import url("assets/plugin/owl-carousel/css/owl.carousel.css");
+/*@import url("assets/plugin/owl-carousel/css/owl.carousel.css");
 @import url("assets/plugin/owl-carousel/css/owl.theme.css");
-@import url("assets/css/owl/owl.transitions.css");
-
-
+@import url("assets/css/owl/owl.transitions.css");*/

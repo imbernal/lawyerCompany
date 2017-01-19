@@ -424,6 +424,7 @@ section,
     overflow: hidden;
     position: relative;
     width: 100%;
+    background-color: #d8d8d8;
 }
 /* z-index */
 
@@ -1330,7 +1331,7 @@ section,
     border: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
     padding: 34px 40px !important;
-    font-size: 30px !important;
+    font-size: 20px !important;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
 }
@@ -1818,7 +1819,7 @@ i,
     background: none;
 }
 .sticky-menu {
-    z-index: inherit;
+    z-index: 10;
 }
 /*--------------- Side Navigation Menu--------------*/
 
@@ -1996,7 +1997,7 @@ i,
 *******************************************************************************/
 
 .practice-area {
-    padding: 70px 15px 50px;
+    padding: 35px 15px 10px;
     -moz-transition: all 350ms ease-in-out 0s;
     -webkit-transition: all 350ms ease-in-out 0s;
     -o-transition: all 350ms ease-in-out 0s;
@@ -2615,7 +2616,7 @@ a.singleblog-img-icon {
 a.light-button,
 button.light-button,
 input.light-button {
-    background-color: #d6d6d6;
+    background-color: #eae7e7;
     color: #878787;
     float: left;
     margin-top: 10px;
@@ -3116,12 +3117,13 @@ p.tp-caption.button-block a {
 }
 .carousel-caption {
     bottom: auto;
-    left: 7%;
+    left: 25%;
+    width: 50%;
     position: absolute;
     right: 7%;
-    top: 50%;
+    top: 72%;
     transform: translateY(-50%);
-    z-index: 0;
+    z-index: 1;
 }
 #main-slider.carousel {
     float: left;
@@ -3398,6 +3400,13 @@ p.tp-caption.button-block a {
 *******************************************************************************/
 /*Special Features */
 
+.special-feature{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 350px;
+}
+
 .special-feature .section-title hr {
     border-color: #151515;
 }
@@ -3418,10 +3427,12 @@ p.tp-caption.button-block a {
     font-size: 16px;
     font-weight: 400;
 }
+
+
 .special-feature .mask-top {
     width: 100%;
     background-color: #ffffff;
-    padding: 0px 0 35px;
+
     position: absolute;
     bottom: 0px;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -7274,7 +7285,7 @@ text[Attributes Style] {
 }
 div#page {
     max-width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 input[type="text"],
 input[type="email"],
@@ -7340,4 +7351,73 @@ textarea {
 
 .back-to-top span{
   right: 8px;
+}
+
+.color1{
+  background: #f07c68;
+}
+
+.color2{
+  background: #f1593f;
+}
+.navbar-default{
+  box-shadow: none !important;
+}
+
+header{
+  margin-bottom: 3%;
+}
+
+#testImg{
+  left: 0px !important;
+}
+
+.data{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.data #cell{
+  margin-right: 18px !important;
+}
+
+.carousel .item {
+  height:600px;
+}
+
+.item img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel{
+  z-index: -1;
+}
+
+
+.tab-content{
+    overflow-y: scroll;
+    height: 680px;
+}
+
+.attorneys-all-main{
+  background: rgba(193, 193, 193, 0.11);
+}
+
+@media screen and (min-width: 1200px ){
+  .carousel-inner{
+    height: 600px !important;
+  }
+  .item img {
+    top: 0;
+
+    height: 800px;
+  }
+  .carousel .item {
+    /*height:900px;*/
+  }
 }
