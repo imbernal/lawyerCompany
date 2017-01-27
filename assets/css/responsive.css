@@ -1,5 +1,5 @@
 /******************************************************************************
-  Min Width "1500px" 
+  Min Width "1500px"
 *******************************************************************************/
 @media (min-width: 1500px) {
     .home-blog .owl-carousel .col-md-3 {
@@ -198,7 +198,7 @@
     }
 }
 /******************************************************************************
-  MIN Width "992px" 
+  MIN Width "992px"
 *******************************************************************************/
 
 @media (min-width: 992px) {
@@ -292,7 +292,7 @@
     }
 }
 /******************************************************************************
-   Min Width "768px" - Max Width "991px" 
+   Min Width "768px" - Max Width "991px"
 *******************************************************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -710,7 +710,7 @@
         max-width: 100% !important;
     }
     /* Padding */
-    
+
     .xs-pad-10 {
         padding: 10px;
     }
@@ -784,7 +784,7 @@
         padding-bottom: 80px;
     }
     /* Margin */
-    
+
     .xs-margin-10 {
         margin: 10px;
     }
@@ -913,7 +913,7 @@
     }
     .navbar-header {
         /*float: left;*/
-        
+
         padding: 15px 0px;
     }
     .timeliner:before {
@@ -1064,6 +1064,16 @@
     }
     .navbar-collapse .navbar-nav {
         padding-bottom: 10px;
+        background-color: white;
+
+    }
+
+    .navbar-default .navbar-nav>li>a{
+      color: #777 !important;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover{
+      color: #f97c67 !important;
     }
     header .navbar-form {
         margin: none;
@@ -1093,7 +1103,7 @@
         width: 50%;
     }
     /* Timeline Blog / Resume */
-    
+
     .blog.timeliner .timeline-icon {
         left: 0;
         margin: 22px 0 0;
@@ -1342,7 +1352,7 @@
     }
 }
 /******************************************************************************
- min-width: 640px - max-width: 767px 
+ min-width: 640px - max-width: 767px
 *******************************************************************************/
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1416,7 +1426,7 @@
         width: 100%;
     }
     /* TImeline */
-    
+
     .blog.timeliner > li .timeline-panel {
         padding: 20px;
     }

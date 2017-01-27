@@ -22,10 +22,15 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	$('#practiceArea').click(function(e){
+	$('#practiceArea').mouseenter(function(e){
   	e.preventDefault();
 		$("#dropdownPractice").toggleClass("showDoprdown");
-	})
+	});
+
+	$('#practiceAreaAbout').mouseenter(function(e){
+		e.preventDefault();
+		$("#dropdownPractice").toggleClass("showDoprdown");
+	});
 
 	/* ---------------------
 		Hover slide

@@ -7,6 +7,7 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     background: #FFFFFF !important;
+    margin: 0;
 }
 input,
 button,
@@ -3117,11 +3118,11 @@ p.tp-caption.button-block a {
 }
 .carousel-caption {
     bottom: auto;
-    left: 25%;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+
     position: absolute;
-    right: 7%;
-    top: 72%;
+    top: 52%;
     transform: translateY(-50%);
     z-index: 1;
 }
@@ -7376,6 +7377,7 @@ header{
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  color: white;
 }
 
 .data #cell{
@@ -7403,6 +7405,7 @@ header{
   position: absolute;
   width: 100%;
   z-index: 1;
+  background: transparent;
 }
 
 #imgLogo{
@@ -7432,16 +7435,71 @@ header{
   background: rgba(193, 193, 193, 0.11);
 }
 
-@media screen and (min-width: 1200px ){
-  .carousel-inner{
-    height: 600px !important;
-  }
-  .item img {
-    top: 0;
+.carousel-inner{
+  height: 100vh !important;
+}
 
-    height: 800px;
+.navbar-header{
+  width: 100%;
+  position: absolute;
+}
+
+
+.item img {
+  height: 100vh !important;
+  top:0;
+  width: 100%;
+}
+
+.navScroll , #practiceArea{
+  /*font-family: 'Raleway';*/
+
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.img-navbar{
+  margin-left: 20px;
+}
+
+.navbar-nav ul.sm-nowrap > li > a{
+  color: #777 !important;
+}
+
+.navbar-nav ul.sm-nowrap > li > a:hover{
+  color:  #f67f6a !important;
+}
+
+.carousel-caption h3:first-child{
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: none !important;
+}
+
+.otherText{
+  color: #f67f6a;
+  animation-delay: 2s;
+}
+
+#owl-demo{
+  position: absolute;
+  bottom: -4%;
+}
+
+.carousel .item{
+  min-height: inherit !important;
+}
+
+.about > li > a{
+  color: red !important;
+}
+
+@media screen and (min-width: 769px ){
+  #navbar-collapse-1{
+    display: inline-block !important;
+    float: right;
+    margin-right  : 20px;
   }
-  .carousel .item {
-    /*height:900px;*/
-  }
+
 }

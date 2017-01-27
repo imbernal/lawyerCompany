@@ -1,0 +1,36 @@
+.navbar.navbar-bg-light .navbar-nav > li > a{
+  color: #777 !important;
+}
+
+.navbar.navbar-bg-light .navbar-nav > li > a:hover{
+  color: #f96d55 !important;
+}
+
+.dataAbout{
+  color: #777 !important;
+}
+
+#sticker{
+  margin-bottom: 0px !important;
+}
+
+.navbar-brand{
+  margin-top: 1%;
+}
+
+.vertical-nav-tabs.nav-tabs>li>a{
+  color: #555 !important;
+}
+
+
+
+@media screen and (max-width: 769px ){
+  .navbar-header-about{
+
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+  }
+
+}
