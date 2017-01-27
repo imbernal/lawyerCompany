@@ -7395,7 +7395,31 @@ header{
 }
 
 .carousel{
-  z-index: -1;
+  position: relative;
+  zoom: normal !importart;
+}
+
+#navbarId{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#imgLogo{
+  width: 100px;
+  height: auto;
+}
+
+.nav li a{
+  color: white !important;
+}
+
+.nav li a:hover{
+  color: #f96d55 !important;
+}
+
+.showDoprdown{
+  display: block !important;
 }
 
 

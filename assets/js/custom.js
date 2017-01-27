@@ -22,6 +22,10 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	$('#practiceArea').click(function(e){
+  	e.preventDefault();
+		$("#dropdownPractice").toggleClass("showDoprdown");
+	})
 
 	/* ---------------------
 		Hover slide
@@ -485,6 +489,6 @@ function homePageSliderInit() {
 
       $('#back-to-top').tooltip('show');
 
-// 
+//
 //
 // }
