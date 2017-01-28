@@ -7482,10 +7482,7 @@ header{
   animation-delay: 2s;
 }
 
-#owl-demo{
-  position: absolute;
-  bottom: -4%;
-}
+
 
 .carousel .item{
   min-height: inherit !important;
@@ -7493,6 +7490,31 @@ header{
 
 .about > li > a{
   color: red !important;
+}
+
+.arrowMore{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+
+#arrowHeader{
+
+    position: relative;;
+    bottom: 180px;
+    color: white;
+    animation: arrow .8s cubic-bezier(0.47, 0.08, 0.57, 0.78) infinite;
+    animation-direction: alternate ;
+    /* z-index: 2342342; */
+
+}
+
+
+
+@keyframes arrow {
+	0%{ margin-top: 0%}
+	100%{ margin-top: 2%}
 }
 
 @media screen and (min-width: 769px ){

@@ -22,6 +22,15 @@
   color: #555 !important;
 }
 
+.attorneys-all-main{
+  padding: 34px 0px !important;
+}
+
+.decoration{
+  display: flex;
+  justify-content: center;
+}
+
 
 
 @media screen and (max-width: 769px ){
