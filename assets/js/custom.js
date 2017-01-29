@@ -22,12 +22,12 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	$('#practiceArea').mouseenter(function(e){
+	$('#practiceArea').hover(function(e){
   	e.preventDefault();
 		$("#dropdownPractice").toggleClass("showDoprdown");
 	});
 
-	$('#practiceAreaAbout').mouseenter(function(e){
+	$('#practiceAreaAbout').hover(function(e){
 		e.preventDefault();
 		$("#dropdownPractice").toggleClass("showDoprdown");
 	});
