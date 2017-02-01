@@ -7576,6 +7576,10 @@ header{
   width: 100%;
 }
 
+#contact{
+  padding: 80px 0px 80px !important;
+}
+
 
 
 @keyframes textHeaderAnimation {

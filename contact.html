@@ -159,35 +159,12 @@
             </div>
             <div class="section-background section-background-white"></div>
          </div>
-         <div id="map">
-            <div class="map-section">
-               <div class="map-canvas"
-                  data-zoom="16"
-                  data-lat="25.8211098"
-                  data-lng="-80.317186"
-                  data-type="roadmap"
-                  data-hue="#ffc400"
-                  data-title="Miami,Florida"
-                  data-content="Angulo Diaz<br>
-                  Contact: 305-468-9564<br>
-                  <a href='mailto:info@youremail.com'>service@angulolawfirm.com</a>
-                  <br>5207 Northwest 74 Ave.
-                    Miami, Florida. 33166"
 
-                  style="height: 550px;">
-               </div>
-            </div>
-         </div>
          <!-- map -->
          <div id="contact" class="contact-area">
             <div class="container">
                <div class="row text-center">
-                  <div class="col-md-12 pad-80">
-                     <h2 class="opensans lawyer-title text-center">Contact <span class="opensanslight border-left">Us</span></h2>
-                     <p>Praesent sagittis risus nisi, a fermentum tellus aliquam vel. Ut faucibus, <br>
-                        mauris quis fermentum placerat, sem turpis volutpat massa,
-                     </p>
-                  </div>
+
                </div>
                <div class="row">
                   <div class="col-sm-4 col-md-4 contact-details">
@@ -229,7 +206,7 @@
                         </div>
                         <div class="col-md-4 form-group">
                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email">
-                        </div>
+                        </div>  
                         <div class="col-md-4 form-group">
                            <input type="text" class="form-control" id="exampleInputNumber" placeholder="Your Number">
                         </div>
@@ -246,7 +223,9 @@
             </div>
          </div>
          <!--Upper footer section end -->
-
+         <div style="width: 100%"><iframe width="100%" height="400" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;coord=25.8211098,-80.31718599999999&amp;q=5207%20Northwest%2074%20Ave.%20Miami%2C%20Florida.%2033166+(Angulo%20Diaz%20Law%20Firm)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+           <a href="http://www.mapsdirections.info/medir-distancia-area.html">Medir la distancia entre puntos
+           </a> en <a href="http://www.mapsdirections.info/"> </a></iframe></div>
          <!--Upper footer section  -->
          <footer>
                <div class="container">
@@ -300,115 +279,7 @@
       <script src="assets/plugin/owl-carousel/js/owl.carousel.js"></script>
       <!-- CUSTOM JS -->
       <script src="assets/js/custom.js"></script>
-      <script>
-         /* --------------------------------------------
-         Google Map
-         -------------------------------------------- */
-         window.onload = MapLoadScript;
-         function GmapInit() {
-		       Gmap = $('.map-canvas');
-         	  Gmap.each(function() {
-         		var $this           = $(this),
-         			lat             = 25.8211098,
-         			lng             = -80.317186,
-         			zoom            = 12,
-         			scrollwheel     = false,
-         			zoomcontrol 	= true,
-         			draggable       = true,
-         			mapType         = google.maps.MapTypeId.ROADMAP,
-         			title           = '',
-         			contentString   = '',
-         			dataLat         = $this.data('lat'),
-         			dataLng         = $this.data('lng'),
-         			dataZoom        = $this.data('zoom'),
-         			dataType        = $this.data('type'),
-         			dataScrollwheel = $this.data('scrollwheel'),
-         			dataZoomcontrol = $this.data('zoomcontrol'),
-         			dataHue         = $this.data('hue'),
-         			dataTitle       = $this.data('title'),
-         			dataContent     = $this.data('content');
 
-         		if( dataZoom !== undefined && dataZoom !== false ) {
-         			zoom = parseFloat(dataZoom);
-         		}
-         		if( dataLat !== undefined && dataLat !== false ) {
-         			lat = parseFloat(dataLat);
-         		}
-         		if( dataLng !== undefined && dataLng !== false ) {
-         			lng = parseFloat(dataLng);
-         		}
-         		if( dataScrollwheel !== undefined && dataScrollwheel !== null ) {
-         			scrollwheel = dataScrollwheel;
-         		}
-         		if( dataZoomcontrol !== undefined && dataZoomcontrol !== null ) {
-         			zoomcontrol = dataZoomcontrol;
-         		}
-         		if( dataType !== undefined && dataType !== false ) {
-         			if( dataType == 'satellite' ) {
-         				mapType = google.maps.MapTypeId.SATELLITE;
-         			} else if( dataType == 'hybrid' ) {
-         				mapType = google.maps.MapTypeId.HYBRID;
-         			} else if( dataType == 'terrain' ) {
-         				mapType = google.maps.MapTypeId.TERRAIN;
-         			}
-         		}
-         		if( dataTitle !== undefined && dataTitle !== false ) {
-         			title = dataTitle;
-         		}
-         		if( navigator.userAgent.match(/iPad|iPhone|Android/i) ) {
-         			draggable = false;
-         		}
-
-         		var mapOptions = {
-         		  zoom        : zoom,
-         		  scrollwheel : scrollwheel,
-         		  zoomControl : zoomcontrol,
-         		  draggable   : draggable,
-         		  center      : new google.maps.LatLng(lat, lng),
-         		  mapTypeId   : mapType
-         		};
-         		var map = new google.maps.Map($this[0], mapOptions);
-
-         		var image = 'assets/img/icons/map-marker.png';
-         		if( dataContent !== undefined && dataContent !== false ) {
-         			contentString = '<div class="map-data">' + '<h6>' + title + '</h6>' + '<div class="map-content">' + dataContent + '</div>' + '</div>';
-         		}
-         		var infowindow = new google.maps.InfoWindow({
-         			content: contentString
-         		});
-
-         		var marker = new google.maps.Marker({
-         		  position : new google.maps.LatLng(lat, lng),
-         		  map      : map,
-         		  icon     : image,
-         		  title    : title
-         		});
-         		if( dataContent !== undefined && dataContent !== false ) {
-         			google.maps.event.addListener(marker, 'click', function() {
-         				infowindow.open(map,marker);
-         			});
-         		}
-
-         		if( dataHue !== undefined && dataHue !== false ) {
-         		  var styles = [
-         			{
-         			  stylers : [	]
-         			}
-         		  ];
-         		  map.setOptions({styles: styles});
-         		}
-         	 });
-         }
-
-         function MapLoadScript() {
-			"use strict";
-         	var script = document.createElement('script');
-         	script.type = 'text/javascript';
-         	script.src = 'https://maps.googleapis.com/maps/api/js?key=?v=AIzaSyBfVJRFgb4mJqJWa2w65xVTxivCtIL067g.exp&sensor=false&' + 'callback=GmapInit';
-         	document.body.appendChild(script);
-         }
-
-      </script>
       <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
 type="text/javascript"></script> -->
    </body>
