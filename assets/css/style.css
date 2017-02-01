@@ -3464,10 +3464,11 @@ p.tp-caption.button-block a {
     overflow: hidden;
     position: relative;
     min-height: 290px;
-    /*border:1px solid #f2f2f2;*/
-
+    border-top:3px solid #f2826f;
+    border-radius: 7px;
     margin-bottom: 20px;
     cursor: pointer;
+    box-shadow: 4px 11px 5px 6px rgb(204, 204, 204);
 }
 .special-feature .mask-bottom {
     color: #333333;
@@ -7377,7 +7378,13 @@ header{
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  flex-direction: column;
   color: white;
+}
+
+.cellEmail{
+  display: flex;
+  justify-content: center;
 }
 
 .data #cell{
@@ -7471,6 +7478,10 @@ header{
   color:  #f67f6a !important;
 }
 
+.fa{
+  font-size: 25px !important;
+}
+
 .carousel-caption h3:first-child{
   font-size: 30px;
   font-weight: 400;
@@ -7479,10 +7490,31 @@ header{
 
 .otherText{
   color: #f67f6a;
+  font-weight: bold;
   animation-delay: 2s;
 }
 
 
+.socialIcons{
+    display: flex;
+    padding-top: 7px;
+    justify-content: center;
+}
+
+.socialIcons .eachIcon{
+  display: flex;
+  width: 62%;
+  justify-content: space-between;
+}
+
+.socialIcons .eachIcon a{
+  color: white;
+  font-size: 18px;
+}
+
+.socialIcons .eachIcon a:hover{
+  color: #f96d55 !important;
+}
 
 .carousel .item{
   min-height: inherit !important;
@@ -7506,8 +7538,49 @@ header{
     color: white;
     animation: arrow .8s cubic-bezier(0.47, 0.08, 0.57, 0.78) infinite;
     animation-direction: alternate ;
-    /* z-index: 2342342; */
+    font-size: 45px !important;
 
+}
+
+.carousel-caption{
+  /*animation: textHeaderAnimation 0.2s linear infinite;*/
+  /*border-radius: 7px;*/
+  background: linear-gradient(rgba(169, 169, 169, 0.37), transparent) , linear-gradient(to top , rgba(156, 67, 67, 0.54) , transparent);
+  /*box-shadow: 0px 1px 5px 6px rgba(204, 204, 204, 0.49);*/
+}
+
+.carousel-caption h3{
+  padding-top: 23px;
+  line-height: 30px !important;
+}
+
+.carouselAbout{
+  /*height: 50vh !important;*/
+}
+
+#iconBlog{
+  font-size: 60px !important;
+}
+
+/*.mainAbout{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}*/
+
+/*.yelinaAbout , .jessicaAbout{
+  width: 40%;
+}*/
+
+.yelinaAbout .carousel, .jessicaAbout .carousel{
+  width: 100%;
+}
+
+
+
+@keyframes textHeaderAnimation {
+	0%{ opacity: : 0}
+	100%{ opacity: : 1}
 }
 
 

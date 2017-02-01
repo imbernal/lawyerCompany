@@ -10,12 +10,24 @@
   color: #777 !important;
 }
 
+.dataAbout .socialIcons .eachIcon a{
+  color: #777 !important;
+}
+
+.dataAbout .socialIcons .eachIcon a:hover{
+  color: #f96d55 !important;
+}
+
 #sticker{
   margin-bottom: 0px !important;
 }
 
 .navbar-brand{
   margin-top: 1%;
+}
+
+.vertical-nav-tabs.nav-tabs .active a{
+  color:white !important;
 }
 
 .vertical-nav-tabs.nav-tabs>li>a{
@@ -30,6 +42,11 @@
   display: flex;
   justify-content: center;
 }
+
+.decoration i{
+  font-size: 60px;
+}
+
 
 
 
