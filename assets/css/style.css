@@ -7442,7 +7442,7 @@ header{
   background: rgba(193, 193, 193, 0.11);
 }
 
-.carouselHome{
+.carousel-inner{
   height: 100vh !important;
 }
 
