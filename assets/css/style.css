@@ -7442,8 +7442,13 @@ header{
   background: rgba(193, 193, 193, 0.11);
 }
 
-.carousel-inner{
+.carouselHome{
   height: 100vh !important;
+}
+
+.carouselAbout{
+  margin-bottom: 15px;
+  height: 58vh !important;
 }
 
 .navbar-header{
@@ -7452,7 +7457,7 @@ header{
 }
 
 
-.item img {
+.itemHome img {
   height: 100vh !important;
   top:0;
   width: 100%;
@@ -7562,15 +7567,9 @@ header{
   font-size: 60px !important;
 }
 
-/*.mainAbout{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}*/
-
-/*.yelinaAbout , .jessicaAbout{
-  width: 40%;
-}*/
+.itemAbout{
+  height: auto !important;
+}
 
 .yelinaAbout .carousel, .jessicaAbout .carousel{
   width: 100%;
